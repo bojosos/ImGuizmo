@@ -12,11 +12,6 @@ project "yaml-cpp"
 
 	}
 
-	includedirs
-	{
-		"include"
-	}
-
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
