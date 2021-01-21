@@ -1,4 +1,4 @@
-project "yaml-cpp"
+project "ImGuizmo"
 	kind "StaticLib"
 	language "C++"
 
@@ -8,9 +8,13 @@ project "yaml-cpp"
 	files
 	{
 		"ImGuizmo.h",
-		"ImGuizmo.cpp",
-
+		"ImGuizmo.cpp"
 	}
+
+  includedirs
+  {
+    "%{IncludeDir.imgui}"
+  }
 
 	filter "system:windows"
 		systemversion "latest"
